@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, target-densitydpi=high-dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/selection.css"/>
+<title>第五届十佳主持人评选</title>
+</head>
+<body>
+  <div class="active-wrap">
+	<div class="host-music">
+		<div class="host-music-pic">
+			<img src="images/active-host-per1.jpg">
+			<span>中国之声：雨婷</span>
+		</div>
+		<div class="host-music-con">
+			<div class="host-music-file"><img src="images/active-host-music.jpg" height="24"></div>
+			<div class="host-music-text">哈萨克族听众中有较大影响的哈萨克语播音员主持人。儿童听众叫她“阿尔达克姐姐”，中青年和老年听众说她是“哈萨克好声音”。2012年阿尔达克开始播送小说，其中播送的哈族著名作家奥拉斯汗·阿合买提写的《沙漠里的足迹》，在听众中反响很大，听众说她的声音亲切、温柔、甜美、好听，感情丰富，鲜明生动。</div>
+		</div>
+	</div>
+	<div class="host-rate">
+		<ul>
+			<li><input type="radio" id="appreciate5" /><label for="appreciate5">非常欣赏</label></li>
+			<li><input type="radio" id="appreciate4" /><label for="appreciate4">比较欣赏</label></li>
+			<li><input type="radio" id="appreciate3" /><label for="appreciate3">一般欣赏</label></li>
+			<li><input type="radio" id="appreciate2" /><label for="appreciate2">不太欣赏</label></li>
+			<li><input type="radio" id="appreciate1" /><label for="appreciate1">不欣赏</label></li>
+		</ul>
+	</div>
+	<div class="host-receive">
+		<div class="host-rec-input"><input type="text" placeholder="请输入您的手机号" /><span onclick="layerShow()">提交</span></div>
+		<div class="host-rec-text">手机号是抽奖的唯一凭证，绝不外泄！</div>
+	</div>
+	<div class="host-video">
+		<div class="host-video-title"><span>风采展示</span></div>
+		<div class="host-video-file">
+			<img src="images/active-host-video.jpg">
+		</div>
+	</div>
+  </div>
+  <div class="overlay" style="display:none;" onclick="layerHide()">
+  	<div class="over-result">
+  		<div class="over-resu-title">投票成功</div>
+  		<div class="over-resu-cont">
+  			<p>每天<span class="red">下午三点</span>中奖信息与您不见不散!</p>
+  			<p>敬请关注“央广调查”。</p>
+  			<div class="over-resu-btn"><span>继续投票</span><span>继续投票</span></div>
+  		</div>
+  	</div>
+  </div>
+  <script type="text/javascript">
+  	var overlay = document.getElementsByClassName("overlay")[0];
+  	function layerShow(){
+  		 overlay.style.display="block";
+  	}
+  	function layerHide(){
+  		 overlay.style.display="none";
+  	}
+  </script>
+</body>
+</html>
